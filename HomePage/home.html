@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="stylesheet" href="home.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <!--Start of Navbar-->
+    <nav class="nav">
+      <img class="logo" src="../assets/logo.png" alt="Logo">
+      <a class="active" href="home.html"><i class="fa-solid fa-house"></i> Home</a>
+      <a href="../ProductsPage/products.html"
+        ><i class="fa-brands fa-product-hunt"></i> Products</a
+      >
+      <a href="../AboutPage/about.html"><i class="fa-solid fa-user-group"></i> About Us</a>
+      <a class="cartNum" href="#"
+        ><i class="fa-solid fa-cart-shopping"></i
+        ><span id="cartNumSpan">0</span></a
+      >
+      <div class="dropdown">
+        <a class="email" href="#"
+          ><i class="fa-solid fa-envelope"></i> <span id="userEmail"></span
+        ></a>
+        <div class="dropdown-content">
+          <a id="loginBtn" href="#">Login</a>
+          <a id="logoutBtn" href="#">Logout</a>
+        </div>
+      </div>
+    </nav>
+    <!--End of Navbar-->
+
+    <!--Start of Slider-->
+    <div class="container">
+      <div class="slider">
+        <div class="c1" id="slide"></div>
+
+        <div class="controls">
+          <div><button id="btnLeft" onclick="left()">&#9664;</button></div>
+          <div><button id="btnRight" onclick="right()">&#9654;</button></div>
+        </div>
+      </div>
+    </div>
+    <!--End of Slider-->
+
+    <!--Start of Category Section-->
+    <section class="category">
+      <h1 class="heading">Shop by <span>category</span></h1>
+
+      <div class="box-container">
+        <div class="box">
+          <img src="../assets/WomanCategory.jpg" alt="" />
+          <div class="content">
+            <span>upto 50% off</span>
+            <h3>for womans</h3>
+            <a href="../ProductsPage/products.html" class="btn">Shop Now</a>
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="../assets/ManCategory3.jpg" alt="" />
+          <div class="content">
+            <span>upto 50% off</span>
+            <h3>for Mans</h3>
+            <a href="../ProductsPage/products.html" class="btn">Shop Now</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--End of Category Section-->
+
+    <!-- Start of Deal Section-->
+    <section class="deal" id="deal">
+      <h1 class="heading">special <span>deal</span></h1>
+
+      <div class="row">
+        <div class="content">
+          <span class="discount">upto 50% off</span>
+          <h3 class="text">Deal of The Day</h3>
+          <div class="count-down">
+            <div class="box">
+              <h3 id="days">00</h3>
+              <span>Days</span>
+            </div>
+            <div class="box">
+              <h3 id="hours">00</h3>
+              <span>Hours</span>
+            </div>
+            <div class="box">
+              <h3 id="minutes">00</h3>
+              <span>Minutes</span>
+            </div>
+            <div class="box">
+              <h3 id="seconds">00</h3>
+              <span>Seconds</span>
+            </div>
+          </div>
+          <a href="../ProductsPage/products.html" class="btn">Shop Now</a>
+        </div>
+        <div class="image">
+          <img src="../assets/deal2.png" alt="" />
+        </div>
+      </div>
+    </section>
+    <!-- End of Deal Section-->
+
+    <!-- Start of Review Section -->
+    <section class="review" id="review">
+      <h1 class="heading">Customers <span>Review</span></h1>
+
+      <div class="review-slider swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="slideReview">
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <p>
+                Excellent experience! The website offers a wide range of
+                high-quality products, and the deals are unbeatable. The
+                user-friendly interface made my shopping experience enjoyable,
+                and the quick delivery exceeded my expectations. Will definitely
+                shop here again!
+              </p>
+              <div class="user">
+                <img src="../assets/reveiw1.jpg" alt="" />
+                <div class="user-info">
+                  <h3>Alex Johnson</h3>
+                  <span>Happy Customer</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="slideReview">
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <p>
+                Impressed with the variety of products and the simple
+                navigation. The "Shop by category" section made it easy to find
+                what I was looking for. The deals are fantastic, and the
+                checkout process is smooth. Plus, the responsive customer
+                service team promptly addressed my queries.
+              </p>
+              <div class="user">
+                <img src="../assets/reveiw2.jpg" alt="" />
+                <div class="user-info">
+                  <h3>Emily Smith</h3>
+                  <span>Happy Customer</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="slideReview">
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <p>
+                Great website with an appealing design. I found the special
+                deals section very enticing. The countdown feature for the deals
+                adds a sense of urgency. However, I wish there were more
+                filtering options while browsing through products. Overall,
+                satisfied with my purchase.
+              </p>
+              <div class="user">
+                <img src="../assets/reveiw3.jpg" alt="" />
+                <div class="user-info">
+                  <h3>Michael Turner</h3>
+                  <span>Happy Customer</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="slideReview">
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <p>
+                Wonderful shopping destination! The customer reviews section
+                helped me make informed decisions, and the swiper slider
+                showcasing customer feedback is a nice touch. The responsive
+                design worked well on my mobile, making it convenient to shop on
+                the go. Highly recommended!
+              </p>
+              <div class="user">
+                <img src="../assets/reveiw4.jpg" alt="" />
+                <div class="user-info">
+                  <h3>Isabella Oliver</h3>
+                  <span>Happy Customer</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End of Review Section -->
+
+    <!-- Start of Footer Section -->
+    <section class="footer">
+      <div class="footer-container">
+        <div class="box-container">
+          <div class="box">
+            <h3>Quick Links</h3>
+            <a href="../HomePage/home.html"><i class="fa-solid fa-house" style="color:orange;"></i> Home</a>
+            <a href="../ProductsPage/products.html"><i class="fa-brands fa-product-hunt" style="color:orange;"></i> Products</a>
+            <a href="#deal"><i class="fa-brands fa-ideal" style="color:orange;"></i> Deals</a>
+            <a href="#review"><i class="fa-solid fa-star" style="color:orange;"></i> Review</a>
+          </div>
+
+          <div class="box">
+            <h3>Get in Touch</h3>
+            <a href="https://www.facebook.com/salma.elshreif/" target="_blank"><i class="fa-brands fa-facebook" style="color:blue; font-size: 40px;"></i></a>
+            <a href="https://github.com/SalmaElshreif" target="_blank"><i class="fa-brands fa-github" style="color:black; font-size: 40px;"></i></a>
+            <a href="https://www.linkedin.com/in/salma-elshreif-4515611b6/" target="_blank"><i class="fa-brands fa-linkedin" style="color:rgb(2, 2, 90); font-size: 40px;"></i></a>
+          </div>
+
+          <div class="box">
+            <h3>Contact Us</h3>
+            <a href="#"><i class="fa-solid fa-phone" style="color:orange;"></i> 01007989000</a>
+            <a href="#"><i class="fa-solid fa-envelope" style="color:orange;"></i> salma.elshreif2001@gmail.com</a>
+            <a href="#"><i class="fa-solid fa-location-dot" style="color:orange;"></i> Menoufia - Egypt</a>
+            <img src="../assets/payment2.png" alt="" />
+          </div>
+        </div>
+
+        <div class="credit">
+          Created By <span>Salma Elshreif</span> | All Rights Reserved
+        </div>
+      </div>
+    </section>
+    <!-- End of Footer Section -->
+
+    <button id="btnScrollToTop">
+        
+      <a id="btnScrollToTop" href="#slide"><i class="fa-solid fa-circle-arrow-up"></i></a>
+  </button>
+
+    <script>
+      document.getElementById("userEmail").innerText =
+        localStorage.getItem("userEmail") || "";
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="home.js"></script>
+    <script src="../ProductsPage/products.js"></script>
+  </body>
+</html>
